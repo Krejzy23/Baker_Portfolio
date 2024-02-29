@@ -909,10 +909,9 @@ img{
     width: 100%;
     background: var(--color-60);
     display: flex;
-    justify-content: center;
 }
 .container__service{
-    padding: 10%;
+    display: grid;
 }
 .head__service {
     display: grid;
@@ -936,7 +935,7 @@ li ul{
 .grid__list{
     display: grid;
     gap: 30px;
-    padding: 10%;
+    padding: 5%;
 }
 .card__service{
     display: flex;
@@ -1020,7 +1019,7 @@ li ul{
     }
 
     .container {
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -1028,9 +1027,8 @@ li ul{
         width: 100%;
         padding: 20px;
     }
-
-    .content h1 {
-        font-size: 2rem;
+    h1 {
+        font-size: 1rem;
     }
     .header__empty {
         display: none;
@@ -1039,7 +1037,6 @@ li ul{
         display: none; /* Skryje menu na menších obrazovkách */
         flex-direction: column; /* Zajistí, že položky menu budou ve sloupci */
     }
- 
     .navbar__container {
         display: flex;
         flex-direction: row;
@@ -1054,8 +1051,15 @@ li ul{
     .navbar__container.active h1 {
         display: none;
     }
-
- 
+    .container__cards {
+        display: none;
+    }
+    .mirror {
+        font-size: 2.1rem;
+    }
+    .mirror:before{
+        display: none;
+    }
 }
 
 /* Tablety */
