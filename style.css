@@ -82,27 +82,33 @@ nav ul li:hover::after{
 /* Základní styly pro navbar -------------------------------------*/
 .navbar__container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+
+
 }
   
 .navbar__list {
     display: flex; 
     flex-direction: row;
-    width: 100%; /* Nastaví šířku menu */
+    
+
 }
   
 .navbar__item {
     text-align: center; /* Zarovná položky menu na střed */
     padding: 10px 0; /* Přidá padding pro položky */
- }
+}
   
 .navbar.active .navbar__list {
     display: flex; /* Zobrazí menu, když má navbar třídu 'active' */
 }
 .navbar__container.active{
-    max-height: 321px;
+    max-height: auto;
     transition-duration:0.5s ;
+    display: flex;
+    flex-direction: column-reverse;
+
 }
 .navbar__link:is(:hover, :focus) {color: var(--indian-yellow)};
 
@@ -121,8 +127,8 @@ nav ul li:hover::after{
 }
 
 .header__empty{
-    display: none;
-    height: 3.9rem;
+    display: flex;
+    height: 3.8rem;
     width: 26rem;
     border-radius: calc(3.9rem / 2);
     box-shadow: inset 0 1rem 1rem rgba(0,0,0,0.3);
@@ -1048,6 +1054,7 @@ li ul{
     .navbar__container.active h1 {
         display: none;
     }
+
  
 }
 
@@ -1076,6 +1083,15 @@ li ul{
     .nav-toggle-btn {
         display: block; /* Zobrazí tlačítko na menších obrazovkách */
     }
+    .header__empty {
+        display: flex;
+    }
+    .navbar__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+    }
 
     .navbar__list {
         display: none; /* Skryje menu na menších obrazovkách */
@@ -1083,14 +1099,22 @@ li ul{
     }
 
     .navbar__container.active .navbar__list {
-        display: flex; /* Zobrazí menu, když má kontejner třídu 'active' */
+        display: flex;
+        align-items: center;
+
+    }
+    .navbar__container.active .header__empty {
+        display: none;
     }
   
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   
     .nav-toggle-btn { display: none; }
+    .header__empty {
+        display:flex;
+    }
   
   
 }

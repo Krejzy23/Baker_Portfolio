@@ -1,3 +1,5 @@
+"use strict"
+
 document.addEventListener('DOMContentLoaded', function() {
   const navToggler = document.querySelector(".nav-toggle-btn");
   const navbar = document.querySelector(".navbar__container");
