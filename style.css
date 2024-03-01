@@ -1091,8 +1091,10 @@ li ul{
     span{
         font-size: 12px;
     }
+    .gallery__btn{
+        display: none;
+    }
 }
-
 /* Tablety */
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
@@ -1150,6 +1152,4 @@ li ul{
     .header__empty {
         display:flex;
     }
-  
-  
 }
