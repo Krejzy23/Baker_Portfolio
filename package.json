@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "serve": "^11.2.0"
+    "serve": "^14.2.1"
   },
   "main": "index.html",
   "name": "swiper-slides-per-view",
@@ -10,5 +10,8 @@
   },
   "tags": [
     "swiper"
-  ]
+  ],
+  "dependencies": {
+    "swiper": "^11.0.7"
+  }
 }
