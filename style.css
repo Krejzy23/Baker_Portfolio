@@ -1027,9 +1027,7 @@ li ul{
         width: 100%;
         padding: 20px;
     }
-    h1 {
-        font-size: 1rem;
-    }
+
     .header__empty {
         display: none;
     }
@@ -1059,6 +1057,27 @@ li ul{
     }
     .mirror:before{
         display: none;
+    }
+    .waves,.wave.wave1,.wave.wave2,.wave.wave3,.wave.wave4,.waves,.waves1,.waves2 {
+        display: none;
+    }
+    .intro__content {
+        width: 60%;
+        height: 80%;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .intro__subtitle {
+        font-size: 10px;
+    }
+    .intro__title h2{
+        font-size: 20px;
+    }
+    .intro__text{
+        font-size: 8px;
     }
 }
 
