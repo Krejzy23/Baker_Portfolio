@@ -1022,12 +1022,17 @@ li ul{
         width: 90%;
         margin: 0 auto;
     }
+    #btn {
+        margin-top: 150px;
+    }
 
     .content {
         width: 100%;
-        padding: 20px;
     }
-
+    #first {
+        margin-top: 30px;
+        font-size: 35px;
+    }
     .header__empty {
         display: none;
     }
@@ -1078,6 +1083,15 @@ li ul{
     }
     .intro__text{
         font-size: 8px;
+    }
+    .container__counter p{
+       font-size: 11px;
+    }
+    .container__counter img{
+       font-size: 10px;
+    }
+    span{
+        font-size: 12px;
     }
 }
 
